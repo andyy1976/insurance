@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <insurance translate="label" module="shippinginsurance">
+            <label>Shipping Insurance</label>
+            <tab>sales</tab>
+            <frontend_type>text</frontend_type>
+            <frontend_model>Itr_ShippingInsurance_Section_Insurance_Section</frontend_model>
+            <sort_order>313</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <option translate="label">
+                    <label>Shipping insurance settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_insurance translate="label">
+                            <label>Enable shipping insurance</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enables or disables the module. If disabled, all other settings have no effect.</comment>
+                        </enable_insurance>
+                    </fields>
+                </option>
+                <carriername>
+                    <label>%carriername%</label>
+                    <expanded>1</expanded>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <carrier_insurance_enable translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enables or disables the insurance for the specific carrier.</comment>
+                        </carrier_insurance_enable>
+                        <carrier_insurance_pricing_option translate="label">
+                            <label>Insurance pricing option</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Itr_ShippingInsurance_Model_Rateoption</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specifies pricing option for insurance billing.</comment>
+                        </carrier_insurance_pricing_option>
+                        <carrier_insurance_rate>
+                            <label>Insurance rate</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Example of text field.</comment>
+                        </carrier_insurance_rate>
+                    </fields>
+                </carriername>
+            </groups>
+        </insurance>
+    </sections>
+</config>

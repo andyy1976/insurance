@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Itr_ShippingInsurance>
+            <version>0.1.0</version>
+        </Itr_ShippingInsurance>
+    </modules>
+    <global>
+        <models>
+            <shippinginsurance>
+                <class>Itr_ShippingInsurance_Model</class>
+            </shippinginsurance>
+        </models>
+        <helpers>
+            <shippinginsurance>
+                <class>Itr_ShippingInsurance_Helper</class>
+            </shippinginsurance>
+        </helpers>
+        <blocks>
+            <shippinginsurance>
+                <class>Itr_ShippingInsurance_Block</class>
+            </shippinginsurance>
+        </blocks>
+    </global>
+    <default>
+        <shippinginsurance>
+            <option>
+                <checkout_multiple>1</checkout_multiple>
+            </option>
+        </shippinginsurance>
+    </default>
+</config>
